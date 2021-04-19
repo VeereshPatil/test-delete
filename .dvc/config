@@ -1,0 +1,14 @@
+[cache]
+    s3 = s3cache
+['remote "s3remote"']
+    url = S3://datasource-bucket/
+    endpointurl = http://mip-bd-ap05-n2-vm05.mip.storage.hpecorp.net:10009/
+    access_key_id = admin
+    secret_access_key = admin123
+    use_ssl = false
+['remote "s3cache"']
+    url = s3://datasource-bucket/cache/
+    endpointurl = http://mip-bd-ap05-n2-vm05.mip.storage.hpecorp.net:10009/
+    access_key_id = admin
+    secret_access_key = admin123
+    use_ssl = false
